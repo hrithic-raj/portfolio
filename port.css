@@ -420,7 +420,7 @@ div a{
 }
 @media only screen and (max-width: 364px){
     #home h1{
-        font-size: 30px;
+        font-size: 60px;
     }
   
     .home-content button{
