@@ -1,0 +1,434 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+}
+
+/* navbar */
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    background-color: transparent;
+    padding: 10px 0;
+    z-index: 1000;
+    display: flex;
+}
+
+.navbar div {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+div a{
+    text-decoration: none;
+    color: #c8c6c6;
+}
+.nav_left a{
+    padding-left: 30px;
+}
+.nav_right{
+    display: flex;
+}
+
+/* home */
+.gradient{
+    background: url('img/pc3.png' ) no-repeat center center/cover;
+}
+
+#home {
+    height: 700px;
+    /* height: 100vh; */
+    background-image: linear-gradient(180deg,transparent,rgb(61, 60, 60,0.3));
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 60px;
+}
+
+.home-content{
+    display:flex ;
+    flex-direction: column;
+    align-items:flex-start;
+    /* margin-top: 15vh;
+    margin-left: 6vw; */
+    margin-top: 100px;
+    margin-left: 60px;
+}
+
+#home h1{
+    color: #FEFEFE;
+    font-size: 90px;
+}
+#home h2{
+    color: #cac7c7;
+}
+
+.home-content button{
+    margin-top: 30px;
+    margin-left: 20px;
+    background-color: transparent;
+    border-radius: 15px;
+    width: 130px;
+}
+
+.social-icons{
+    margin-top: 150px;
+    margin-left: 60px;
+}
+/* .social-icons img{
+    width: 20px;
+    height: 20px;
+} */
+.social-icons a{
+    margin-right: 35px;
+}
+
+.h2for{
+    color: rgb(199, 199, 199); 
+    font-size: 70px; 
+    text-decoration: underline;
+}
+
+/* about */
+
+#about{
+    height: 700px;
+    /* height: 100vh; */
+    padding-top: 60px;
+    padding: 100px 20px;
+    background: url('img/hrjphoto.jpg') no-repeat center center/cover;
+
+}
+
+.about_right{
+    color: white;
+    margin-left: 70px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+}
+
+.about_right p{
+    overflow:auto;
+}
+
+/* .gradient1{
+    background-image: linear-gradient(180deg,transparent,rgba(0, 0, 0, 0.3));
+
+} */
+
+.about_add h6{
+    color: white;
+    margin-left: 60px;
+    margin-top: 80px;
+}
+
+/* skills */
+
+#skills{
+    height: 700px;
+    /* height: 100vh; */
+    padding-top: 10px;
+    padding: 100px 20px;
+    background-color: #000000;
+    display: grid;
+    text-align: center;
+  
+}
+
+.progress {
+    height: 20px;
+    width: 20vw;
+    margin-top: 10px;
+    background-color: #5e5b5b;
+}
+
+.progress-bar {
+    background-color: #a9eced;
+    transition: width 0.5s ease-in-out;
+}
+.bars{
+    margin-left: 50px;
+    margin-right: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 50px;
+}
+.ptext{
+    color: rgb(185, 185, 185);
+}
+/* projects */
+
+#project{
+    height: 700px;
+    /* height: 100vh; */
+    padding: 50px 20px;
+    background-color: #000000;
+    text-align: center;
+    display: grid;
+    row-gap: 30px;
+}
+
+.p_bar1,.p_bar2{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 50px;
+    column-gap: 20px;
+    justify-content: space-evenly;
+}
+[class*="i-r"]{
+    display: grid;
+    row-gap: 20px;
+}
+.i-class{
+    height: 200px;
+    width: 200px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 6px 2px gray;
+}
+.i-class:hover{
+    opacity: 0.5;
+}
+.i-r-t{
+    color: rgb(185, 185, 185);
+}
+
+#project button{
+    display: none;
+    background-color: transparent;
+    border-radius: 15px;
+    margin-top: 30px;
+}
+
+/* contactme */
+
+#contactme{
+    /* height: 100vh; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 20px 200px 20px;
+    background-color: #000000;
+}
+
+.t_row{
+    text-align: center;
+
+}
+
+.f_cont{
+    display: flex;
+    box-shadow: 0px 0px 6px 2px gray;
+    border-radius: 25px;
+    margin-top: 30px;
+}
+
+.f_img{
+    width: 400px;
+    height: 400px;
+    margin: 20px 20px;
+    border-radius: 25px;
+}
+.f_right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 20px;
+}
+.f_right h5{
+    color: #7ee4e6;
+}
+.btn{
+    background-color: #49e9ec;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+.form-control{
+    width: 400px;
+}
+.form-group{
+    margin-bottom: 20px;
+    margin-right: 20px;
+
+}
+/* hover */
+
+.navbar a:hover{
+    color: #01fbff;
+}
+.home-content button:hover a{
+    color: #000000;
+}
+.social-icons a:hover img{
+    opacity: 0.6;
+}
+#p_btn:hover{
+    background-color: #7ee4e6;
+}
+#p_btn:hover a{
+    color: #000000;
+}
+.btn:hover{
+    background-color: #9df4f6;
+}
+/* responsive */
+
+@media only screen {
+
+}
+@media only screen and (max-width: 1150px){
+    .bars .row{
+        display: inline;
+    }
+    .progress{
+        width: 60vw;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+    .p_bar2{
+        visibility: hidden;
+    }
+    .p_bar1{
+        margin-top: 150px;
+    }
+    #skills{
+        padding: 50px 20px;
+    }
+    .bars{
+        row-gap: 0px;
+    }
+    #about{
+        
+        padding: 50px 20px;
+        padding-top: 1px;
+    }
+}
+@media only screen and (max-width: 1000px){
+   .p_bar1{
+    flex-wrap: nowrap;
+   }
+   .i-r1{
+    display: none;
+   }
+   .f_cont{
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 600px;
+    padding-bottom: 20px;
+   }
+}
+@media only screen and (max-width: 800px){
+    .bars .row{
+        display: flex;
+        flex-direction: column;
+    }
+    .progress{
+        width: 60vw;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+    .about_add h6{
+        margin-top: 10px;
+    }
+}
+@media only screen and (max-width: 730px){
+    .i-r2{
+        display: none;
+    }
+    #project button{
+        display: block;
+    }
+    .p_bar1{
+        margin-top: 100px;
+    }
+    .f_cont{
+        width: 400px;
+    }
+    .f_img{
+        width: 300px;
+        height: 300px;
+    }
+    .form-control{
+        width: 300px;
+    }
+}
+@media only screen and (max-width: 600px){
+    .nav_right{
+        display: none;
+    }
+    #about{
+    background: url('hrjphoto1.jpg') no-repeat center center/cover;
+
+    }
+
+    #about p::before{
+        content: "Hello! I am a passionate Full Stack Web Developer with a degree in Computer Science from Safi Institute of Advanced Study. I specialize in creating responsive and visually appealing web pages. With a strong foundation in both front-end and back-end development";
+        display: block;
+    }
+    #about p{
+        visibility: hidden;
+    }
+    #about p::before{
+        visibility: visible;
+    }
+    #skills{
+        padding: 30px 20px;
+    }
+    .about_add h6{
+        display: none;
+    }
+    
+}
+@media only screen and (max-width: 472px){
+    #home h1{
+        font-size: 70px;
+    }
+   
+    .nav_left a{
+        padding-left: 10px;
+    }
+    .i-r3{
+        display: none;
+    }
+    .home-content{
+        margin-left: 10px;
+    }
+    .h2for{
+        font-size: 50px;
+    }
+
+}
+
+@media only screen and (max-width: 430px){
+    .f_cont{
+        width: 300px;
+    }
+    .f_img{
+        width: 200px;
+        height: 200px;
+    }
+    .form-control{
+        width: 200px;
+    }
+
+}
+@media only screen and (max-width: 364px){
+    #home h1{
+        font-size: 30px;
+    }
+  
+    .home-content button{
+        width: 100px;
+        margin-left: 5px;
+    }
+     .cbtn{
+        display: none;
+    }
+}
+
