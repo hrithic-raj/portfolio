@@ -427,8 +427,10 @@ div a{
         width: 100px;
         margin-left: 5px;
     }
-     .cbtn{
+}
+
+@media only screen and (max-width: 330px){
+    .cbtn{
         display: none;
     }
 }
-
