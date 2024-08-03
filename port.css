@@ -3,8 +3,11 @@ body{
     scroll-behavior: smooth;
     margin: 0;
     padding: 0;
+    background-color: black;
 }
-
+body::-webkit-scrollbar{
+    display: none;
+}
 /* navbar */
 
 .navbar {
@@ -12,11 +15,15 @@ body{
     top: 0;
     width: 100%;
     height: 50px;
-    background-color: transparent;
+    background-color: rgba(32, 32, 32, 0.4);
     padding: 10px 0;
     z-index: 1000;
     display: flex;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(3px);
+
 }
+
 
 .navbar div {
     list-style-type: none;
@@ -25,7 +32,7 @@ body{
 }
 div a{
     text-decoration: none;
-    color: #c8c6c6;
+    color: #e4e4e4;
 }
 .nav_left a{
     padding-left: 30px;
@@ -215,6 +222,7 @@ div a{
     align-items: center;
     padding: 50px 20px 200px 20px;
     background-color: #000000;
+    
 }
 
 .t_row{
@@ -229,7 +237,7 @@ div a{
     margin-top: 30px;
 }
 
-.f_img{
+.f_imgr{
     width: 400px;
     height: 400px;
     margin: 20px 20px;
@@ -409,7 +417,7 @@ div a{
     .f_cont{
         width: 300px;
     }
-    .f_img{
+    .f_imgr{
         width: 200px;
         height: 200px;
     }
