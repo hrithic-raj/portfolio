@@ -120,6 +120,7 @@ div a{
 }
 
 .about_right p{
+    width: 50%;
     overflow:auto;
 }
 
@@ -150,6 +151,7 @@ div a{
 .progress {
     height: 20px;
     /* width: 20vw; */
+    width: 200px;
     margin-top: 10px;
     background-color: #5e5b5b;
 }
@@ -219,7 +221,7 @@ div a{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 50px 20px 0px 20px;
+    padding: 50px 20px 80px 20px;
     background-color: #000000;
     
 }
