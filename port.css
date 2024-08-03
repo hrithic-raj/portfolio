@@ -96,8 +96,8 @@ div a{
 
 .h2for{
     color: rgb(199, 199, 199); 
-    font-size: 70px; 
-    text-decoration: underline;
+    font-size: 70px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 /* about */
@@ -117,7 +117,6 @@ div a{
     margin-top: 50px;
     display: flex;
     flex-direction: column;
-    width: 40vw;
 }
 
 .about_right p{
@@ -150,7 +149,7 @@ div a{
 
 .progress {
     height: 20px;
-    width: 20vw;
+    /* width: 20vw; */
     margin-top: 10px;
     background-color: #5e5b5b;
 }
@@ -220,7 +219,7 @@ div a{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 50px 20px 200px 20px;
+    padding: 50px 20px 0px 20px;
     background-color: #000000;
     
 }
@@ -285,11 +284,10 @@ div a{
 .btn:hover{
     background-color: #9df4f6;
 }
+
 /* responsive */
 
-@media only screen {
 
-}
 @media only screen and (max-width: 1150px){
     .bars .row{
         display: inline;
@@ -328,7 +326,14 @@ div a{
     flex-wrap: wrap;
     justify-content: center;
     width: 600px;
-    padding-bottom: 20px;
+    padding-bottom: 40px;
+   }
+   .f_imgr{
+    width: 470px;
+    margin-top: 40px;
+   }
+   .form-control{
+    width: 470px;
    }
 }
 @media only screen and (max-width: 800px){
@@ -337,7 +342,7 @@ div a{
         flex-direction: column;
     }
     .progress{
-        width: 60vw;
+        /* width: 60vw; */
         margin-top: 20px;
         margin-bottom: 30px;
     }
@@ -358,7 +363,7 @@ div a{
     .f_cont{
         width: 400px;
     }
-    .f_img{
+    .f_imgr{
         width: 300px;
         height: 300px;
     }
@@ -410,7 +415,9 @@ div a{
     .h2for{
         font-size: 50px;
     }
-
+    .about_right{
+        margin-left: 20px;
+    }
 }
 
 @media only screen and (max-width: 430px){
@@ -420,9 +427,10 @@ div a{
     .f_imgr{
         width: 200px;
         height: 200px;
+        border-radius: 40px;
     }
     .form-control{
-        width: 200px;
+        width: 250px;
     }
 
 }
@@ -435,10 +443,45 @@ div a{
         width: 100px;
         margin-left: 5px;
     }
+    .social-icons a{
+        margin-right: 30px;
+    }
 }
 
 @media only screen and (max-width: 330px){
+    #home h1{
+        font-size: 50px;
+    }
     .cbtn{
         display: none;
     }
+    .about_right{
+        margin-left: 5px;
+    }
+    .form-control{
+        width: 200px;
+        height: 30px;
+    }
+    .f_cont{
+        width: 250px;
+    }
+    .social-icons a{
+        margin-right: 20px;
+    }
+    .emailid{
+        font-size: small;
+    }
+    .p_bar1{
+
+    }
+}
+
+@media only screen and (max-width: 300px){
+    .social-icons a{
+        margin-right: 10px;
+    }
+    .about_right{
+        margin-left: 0px;
+    }
+   
 }
