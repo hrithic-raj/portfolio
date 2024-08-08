@@ -40,6 +40,12 @@ div a{
 .nav_right{
     display: flex;
 }
+/* hover */
+.navbar a:hover{
+    color: #01fbff;
+}
+
+
 
 /* home */
 .gradient{
@@ -99,6 +105,15 @@ div a{
     font-size: 70px;
     font-family: Arial, Helvetica, sans-serif;
 }
+/* hover */
+.home-content button:hover a{
+    color: #000000;
+}
+.social-icons a:hover img{
+    opacity: 0.6;
+}
+
+
 
 /* about */
 
@@ -200,9 +215,7 @@ div a{
     border-radius: 15px;
     box-shadow: 0px 0px 6px 2px gray;
 }
-.i-class:hover{
-    opacity: 0.5;
-}
+
 .i-r-t{
     color: rgb(185, 185, 185);
 }
@@ -213,6 +226,18 @@ div a{
     border-radius: 15px;
     margin-top: 30px;
 }
+/* hover */
+.i-class:hover{
+    opacity: 0.5;
+}
+#p_btn:hover{
+    background-color: #7ee4e6;
+}
+#p_btn:hover a{
+    color: #000000;
+}
+
+
 
 /* contactme */
 
@@ -253,7 +278,7 @@ div a{
 .f_right h5{
     color: #7ee4e6;
 }
-.btn{
+.c_btn{
     background-color: #49e9ec;
     margin-top: 20px;
     margin-right: 20px;
@@ -268,21 +293,9 @@ div a{
 }
 /* hover */
 
-.navbar a:hover{
-    color: #01fbff;
-}
-.home-content button:hover a{
-    color: #000000;
-}
-.social-icons a:hover img{
-    opacity: 0.6;
-}
-#p_btn:hover{
-    background-color: #7ee4e6;
-}
-#p_btn:hover a{
-    color: #000000;
-}
+
+
+
 .btn:hover{
     background-color: #9df4f6;
 }
@@ -454,7 +467,7 @@ div a{
     #home h1{
         font-size: 50px;
     }
-    .cbtn{
+    .nav_c{
         display: none;
     }
     .about_right{
@@ -472,9 +485,6 @@ div a{
     }
     .emailid{
         font-size: small;
-    }
-    .p_bar1{
-
     }
 }
 
